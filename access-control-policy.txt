@@ -1,0 +1,29 @@
+Access Control Policy
+
+This policy defines how access is granted and controlled within the network based on Zero Trust principles.
+
+1. Authentication:
+- All users must verify identity before accessing any resource
+- Multi-Factor Authentication (MFA) is required for Admin Zone access
+- Strong passwords are enforced
+
+2. Authorization:
+- Access is granted based on user roles
+- Users only have access to resources necessary for their tasks
+- Admins have elevated privileges
+
+3. Least Privilege Principle:
+- Users are given minimum access required
+- Access rights are reviewed regularly
+
+4. Access Restrictions:
+- User Zone has limited access to internal systems
+- Restricted Zone is accessible only by authorized personnel
+- Admin Zone controls sensitive operations
+
+5. Monitoring and Auditing:
+- User activities are logged and monitored
+- Unauthorized access attempts are flagged
+- Logs are reviewed regularly
+
+This policy ensures that access to network resources is secure, controlled, and continuously verified.
