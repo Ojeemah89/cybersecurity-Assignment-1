@@ -1,0 +1,25 @@
+Firewall Rules Configuration
+
+The following firewall rules were implemented to support Zero Trust principles:
+
+1. Inbound Rules:
+- Block all incoming traffic by default
+- Allow HTTP (Port 80) for web access
+- Allow HTTPS (Port 443) for secure communication
+- Allow SSH (Port 22) only for admin zone
+
+2. Outbound Rules:
+- Allow all outbound traffic for User Zone with restrictions
+- Restrict access to sensitive servers from User Zone
+- Allow Admin Zone full outbound access
+
+3. Zone-Based Restrictions:
+- User Zone cannot access Restricted Zone directly
+- Restricted Zone only accepts traffic from Admin Zone
+- Admin Zone can communicate with all zones
+
+4. Monitoring and Logging:
+- All blocked traffic is logged
+- Suspicious activities are monitored
+
+These rules ensure that unauthorized access is prevented and network traffic is controlled effectively.
