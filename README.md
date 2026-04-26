@@ -20,9 +20,9 @@ To capture and analyze network traffic using Wireshark.
 - TLSv1.3 shows that the communication is encrypted (HTTPS)
 - Observed communication between local IP (private) and external servers (public)
 ## Screenshot Evidence
-![Wireshark Capture](Screenshot%202026-04-25%20215217.png)
+![Wireshark Capture](wireshark-capture.png)
+
 ## Capture File
 [Download network capture](network_capture.pcapng)
-
 ## Conclusion
 Wireshark successfully captured network traffic and demonstrated how data is transmitted securely over the internet.
