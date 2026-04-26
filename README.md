@@ -1,39 +1,24 @@
-# Network Security Tools Lab – Firewall Configuration
+# Network Traffic Capture using Wireshark
 
 ## Objective
-The objective of this lab is to configure a basic firewall rule and test its effectiveness in controlling network traffic.
+To capture and analyze network traffic using Wireshark.
 
-## Tool Used
-- Windows Defender Firewall
+## Tools Used
+- Wireshark
+- Npcap
 
-## Configuration
+## Steps Performed
+1. Installed Wireshark and Npcap
+2. Selected Wi-Fi interface for capture
+3. Started packet capture
+4. Visited websites such as Google to generate traffic
+5. Stopped capture after a few minutes
+6. Saved capture file as network_capture.pcapng
 
-### Inbound Rule
-- Blocked TCP traffic on Port 80 (HTTP)
+## Observations
+- Captured protocols include TCP, UDP, and TLSv1.3
+- TLSv1.3 shows that the communication is encrypted (HTTPS)
+- Observed communication between local IP (private) and external servers (public)
 
-### Outbound Rules
-- Blocked TCP traffic on Port 80 (HTTP)
-- Blocked TCP traffic on Port 443 (HTTPS)
-
-## Testing
-
-### Before Configuration
-- Websites were accessible
-
-### After Configuration
-- Internet access was blocked  
-- Error: **ERR_NETWORK_ACCESS_DENIED**
-
-## Result
-The firewall successfully blocked HTTP and HTTPS traffic, preventing access to websites.
-
-## Screenshots
-
-### Inbound Rule (Port 80)
-![Inbound](Inbound-rule-port80.png)
-
-### Outbound Rule (Port 443)
-![Outbound](Outbound-rule-port443.png)
-
-### Test Result (Blocked Access)
-![Blocked](blocked-test-error.png)
+## Conclusion
+Wireshark successfully captured network traffic and demonstrated how data is transmitted securely over the internet.
