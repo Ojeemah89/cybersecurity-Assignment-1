@@ -1,0 +1,25 @@
+Network Segmentation Plan
+
+The network is divided into three main zones to enforce Zero Trust principles:
+
+1. User Zone:
+- Used by regular users
+- Limited access to internal resources
+- Restricted from accessing sensitive systems
+
+2. Admin Zone:
+- Accessible only by administrators
+- Full access to system configurations and management tools
+- Protected with strong authentication
+
+3. Restricted Zone:
+- Contains sensitive data and critical systems
+- Access strictly controlled and monitored
+- Only authorized users allowed
+
+Communication Rules:
+- User Zone cannot directly access Restricted Zone
+- Admin Zone can access all zones
+- Restricted Zone is isolated and protected
+
+This segmentation reduces the risk of unauthorized access and limits potential attack impact.
